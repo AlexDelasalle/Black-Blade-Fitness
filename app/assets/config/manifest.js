@@ -2,3 +2,5 @@
 //= link_directory ../stylesheets .css
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
+//= link-tree ..images/Subject5.png
+//= link-tree ..images/logo.jpeg
