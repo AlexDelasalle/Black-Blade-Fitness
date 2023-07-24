@@ -105,10 +105,14 @@ body {
 }
 
 #banner-img {
-  height: 488px;
-  width: 364px;
   margin-bottom: none;
   position: relative;
+  height: auto;
+  width: 35vw;
+  /* height: 488px;
+  width: 364px;
+  margin-bottom: none;
+  position: relative; */
   /* object-fit: none;
   object-position: 0 20%;
   position: absolute;
@@ -182,7 +186,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: .5rem;
   text-align: center;
   width: 25%;
+}
+
+.box h2 {
+  font-size: 36px;
 }
