@@ -4,3 +4,4 @@
 //= link_tree ../../../vendor/javascript .js
 //= link-tree ../Subject5.png
 //= link-tree ../logo.jpeg
+//= link application.js
