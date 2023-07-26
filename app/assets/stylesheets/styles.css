@@ -204,20 +204,24 @@ body {
   height: 100%;
   border: solid;
   border-color: black;
+  background-color: #40829C;
   padding: 2rem;
 }
 
 .image-comparison {
   max-width: 500px;
   border-radius: 20px;
+  border-style: solid;
   overflow: hidden;
+  background-color: #40829C;
 }
 
 .image-comparison img {
-  width: 100%; /* CHange to specific number */
-  height: 100%;
+  width: 201.6; /* CHange to specific number */
+  height: 345.6px;
   object-fit: cover;
   object-position: left;
+  border-radius: 20px;
 }
 
 .image-comparison .images-container {
