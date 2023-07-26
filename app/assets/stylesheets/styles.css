@@ -196,79 +196,67 @@ body {
   font-size: 36px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.container {
+.section {
   display: flex;
-  justify-content: center;
-  position: relative;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  height: 100%;
+  border: solid;
+  border-color: black;
+}
+
+.image-comparison {
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 20px;
   overflow: hidden;
-  border-radius: 1rem;
-  --position: 50%;
-  border: solid;
 }
 
-.image-container {
-  max-width: 800px;
-  max-height: 90vh;
-  border: solid;
-}
-
-.slider-image {
-  width: 100%;
+.image-comparison img {
+  width: 100%; /* CHange to specific number */
   height: 100%;
   object-fit: cover;
   object-position: left;
 }
 
-.image-before .image-after {
-  position: absolute;
-  inset: 0;
-  width: var(--position);
+.image-comparison .images-container {
+  position: relative;
+  display: flex;
 }
 
-.slider {
+.image-comparison .images-container .before-image {
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.image-comparison .slider {
   position: absolute;
   inset: 0;
-  cursor: pointer;
   opacity: 0;
-  /* For Firefox */
-  width: 100%;
-  height: 100%;
+  cursor: pointer;
 }
 
-.slider:focus-visible ~ .slider-button {
-  outline: 5px solid black;
-  outline-offset: 3px;
-}
-
-.slider-line {
+.image-comparison .slider-line {
   position: absolute;
-  inset: 0;
-  width: .2rem;
   height: 100%;
-  background-color: white;
-  z-index: 10;
-  left: var(--position);
+  width: 4px;
+  background: #fff;
+  left: 50%;
   transform: translateX(-50%);
-  pointer-events: none;
 }
 
-.slider-button {
-  position: absolute;
-  background-color: white;
-  color: black;
-  padding: .5rem;
-  border-radius: 100vw;
+.image-comparison .slider-icon {
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 50%;
   top: 50%;
-  left: var(--position);
+  color: #fff;
   transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 100;
-  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+  border: solid;
+  border-color: black;
+  border-radius: 50%;
+  padding: 1rem;
 }

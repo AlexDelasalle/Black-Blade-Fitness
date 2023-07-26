@@ -14,4 +14,7 @@
  *= require_self
  */
 
-  @import "styles.css"
+  @import "styles.css";
+  @import "twentytwenty-no-compass.css";
+  @import "foundation.css";
+  @import "twentytwenty.css"
