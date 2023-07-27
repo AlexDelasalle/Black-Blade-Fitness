@@ -278,3 +278,53 @@ body {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 20px;
 }
+
+
+/* SERVICES */
+.services-banner {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  background-color: #4F4F4F;
+  padding: 2rem;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #292929;
+  height: auto;
+  width: 45%;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.packages-card {
+  height: auto;
+  width: 45%;
+  border-radius: 15px;
+  margin: 2rem;
+  opacity: .8;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.packages-card h2 {
+  font-size: 18px;
+}
+
+#standard, #accountability {
+  background-image: linear-gradient(360deg, white, silver);
+}
+
+#premium, #nutrition {
+  background-image: linear-gradient(360deg, white, gold);
+}
+
+.packages-card:hover {
+ opacity: 1;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
