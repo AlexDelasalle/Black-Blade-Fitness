@@ -1,6 +1,13 @@
 {
   "dependencies": {
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@rails/webpacker": "5.4.4",
     "boxicons": "^2.1.4",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3"
   }
 }
