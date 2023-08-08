@@ -1,4 +1,6 @@
-$(document).ready(function () {
+document.addEventListener('turbo:load', function() {
+  // This code will run when the entire document, including all resources, has loaded
+  // You can place your code here that needs to run after everything has loaded
   (function ($) {
     $.fn.timeline = function() {
       var selectors = {
@@ -55,8 +57,10 @@ $(document).ready(function () {
   })(jQuery);
 
   $("#timeline-1").timeline();
-
 });
+
+
+
 
 
 // document.addEventListener("DOMContentLoaded", function () {
